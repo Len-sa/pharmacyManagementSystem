@@ -7,12 +7,19 @@ public class CustomerOrder {
     private int employeeId;
     private int customerId;
 
-    public CustomerOrder(int orderId, String orderDate, int employeeId, int customerId) {
-        this.orderId = orderId;
-        this.orderDate = orderDate;
+    public CustomerOrder(int employeeId, int customerId) {
         this.employeeId = employeeId;
         this.customerId = customerId;
     }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
+
+    public void setOrderDate(String orderDate) {
+        this.orderDate = orderDate;
+    }
+
     public int getOrderId() {
         return orderId;
     }

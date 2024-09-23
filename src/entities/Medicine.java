@@ -42,7 +42,12 @@ public Medicine(String medicineName,String medicineBrand,String manufacturedDate
         return sellingPrice;
     }
 
+    public void setMedicineId(int medicineId) {
+        this.medicineId = medicineId;
+    }
+
     public int getStockQuantity() {
         return stockQuantity;
     }
+
 }
